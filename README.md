@@ -1,5 +1,5 @@
 # Command line tool for finding and pinging default gateway
-This is the first "real" bash script I ever wrote. Since I am trying to land a support role and network troubleshooting is a big part of the, I decided to automate the process of finding the default gateways IP address and pinging it to see if it is up. I accomplished this by using the route command to pull up the routing table then grep for the line, and awk to pull the section that contains the IP we're looking for. I originally tried to use cut, but I was having issues with the delimiter.
+This is the bash script I ever wrote. Since I am trying to land a support role and network troubleshooting is a big part of the, I decided to automate the process of finding the default gateways IP address and pinging it to see if it is up. I accomplished this by using the route command to pull up the routing table then grep for the line, and awk to pull the section that contains the IP we're looking for. I originally tried to use cut, but I was having issues with the delimiter.
 
 ## Prerequisites
 
