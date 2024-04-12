@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# This command finds the IP of the defualt gateway through the routing table and assign it to $IP
+IP=$(route -n | grep UG | awk '{print $2}')
+
+# Display the IP of the defualt gateway
+echo ping default gateway at $IP
+
+# Ping default gateway x4
+ping -c 4 $IP
+
